@@ -17,32 +17,22 @@
             <div class="column">
                 <div class ="header">
                     <img src="assets/images/kakalix_logo.png"/>
-                    <h3> Sign Up </h3>
+                    <h3> Sign in </h3>
                     <span> to continue to Kakalix </span>
                     
 
                 </div>
                 <form method="POST">
 
-                    <input type="text" name="firstName" placeholder="First name" required> 
-
-                    <input type="text" name="lastName" placeholder="Last name" required>
-
                     <input type="text" name="username" placeholder="Username" required>
 
-                    <input type="email" name="email" placeholder="Email" required>
-
-                    <input type="email" name="email2" placeholder="Confirm Email" required>
-
                     <input type="password" name="passowrd" placeholder="Password" required>
-
-                    <input type="password" name="passoword2" placeholder="Confirm Password" required>
 
                     <input type="submit" name="SubmitPassword" value="SUBMIT" required>
 
                 </form>
 
-                <a href="login.php" class="signInMessage"> Already have an account? Sign in here!</a>
+                <a href="register.php" class="signInMessage"> Do not have an account? Sign up here!</a>
             </div>
 
         </div>
