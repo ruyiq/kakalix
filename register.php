@@ -17,7 +17,10 @@ require_once('includes/classes/Constants.php');
         $passowrd = FormSanitizer::sanitizeFormPassword($_POST["password"]);
         $passowrd2 = FormSanitizer::sanitizeFormPassword($_POST["password2"]);
 
-        $account->register($firstName, $lastName, $username, $email1, $email2, $passowrd, $passowrd2);
+        $success = $account->register($firstName, $lastName, $username, $email1, $email2, $passowrd, $passowrd2);
+        if($success) {
+            header("Location: index.php");
+        }
     }
 ?>
 <!DOCTYPE html>
