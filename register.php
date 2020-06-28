@@ -11,13 +11,13 @@ require_once('includes/classes/Constants.php');
         
         $firstName = FormSanitizer::sanitizeFormString($_POST["firstName"]);
         $lastName = FormSanitizer::sanitizeFormString($_POST["lastName"]);
-        $username = FormSanitizer::sanitizeFormUsername($_POST["userName"]);
+        $username = FormSanitizer::sanitizeFormUsername($_POST["username"]);
         $email1 = FormSanitizer::sanitizeFormEmail($_POST["email"]);
         $email2 = FormSanitizer::sanitizeFormEmail($_POST["email2"]);
-        $passowrd = FormSanitizer::sanitizeFormPassword($_POST["password"]);
-        $passowrd2 = FormSanitizer::sanitizeFormPassword($_POST["password2"]);
+        $password = FormSanitizer::sanitizeFormPassword($_POST["password"]);
+        $password2 = FormSanitizer::sanitizeFormPassword($_POST["password2"]);
 
-        $success = $account->register($firstName, $lastName, $username, $email1, $email2, $passowrd, $passowrd2);
+        $success = $account->register($firstName, $lastName, $username, $email1, $email2, $password, $password2);
         if($success) {
             header("Location: index.php");
         }
@@ -50,7 +50,7 @@ require_once('includes/classes/Constants.php');
                     
                     <?php echo $account->getError(Constants::$userNameCharacters); ?>
                     <?php echo $account->getError(Constants::$userNameTaken); ?>
-                    <input type="text" name="userName" placeholder="Username" required>
+                    <input type="text" name="username" placeholder="Username" required>
 
                     <?php echo $account->getError(Constants::$emailsDoNotMatch); ?>
                     <?php echo $account->getError(Constants::$invalidEm); ?>
