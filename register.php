@@ -42,7 +42,7 @@ function getInputValue($name){
 
             <div class="column">
                 <div class ="header">
-                    <img src="assets/images/kakalix_logo.png"/>
+                    <img src="assets/images/kwesd       frddddddakalix_logo.png"/>
                     <h3> Sign Up </h3>
                     <span> to continue to Kakalix </span>
                     
