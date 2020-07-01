@@ -2,6 +2,7 @@
 <?php
 require_once('includes/config.php');
 require_once('includes/classes/previewProvider.php');
+require_once('includes/classes/entityProvider.php');
 require_once('includes/classes/entity.php');
 require_once('includes/classes/categoryContainers.php');
 

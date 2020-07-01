@@ -10,6 +10,16 @@ body{
     color: #333333;
     box-sizing: border-box;
 }
+h3{
+    color:#e5e5e5 ;
+}
+a h3:hover{
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
 
 .wrapper{
     min-width: 1050px ;
@@ -105,6 +115,19 @@ body{
     display: flex;
 }
 
+.previewContainer.small {
+    width: 230px;
+    height: 129px;
+    margin-right: 4px;
+    display: inline-flex;
+}
+
+.previewContainer.small img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .previewOverlay {
     width: 100%;
     height: 100%;
@@ -147,3 +170,26 @@ button i{
     background-color: #e6e6e6;
     color: #000
 }
+
+.category{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.entities {
+    overflow: overlay;
+    white-space: nowrap;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(90, 90, 90);
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }
