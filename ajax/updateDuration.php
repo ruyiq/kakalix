@@ -13,4 +13,4 @@ if(isset($_POST["videoId"]) && isset($_POST["username"]) && isset($_POST["progre
 else {
     echo "No videoId or username passed into file";
 }
-?>
+?> 

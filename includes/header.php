@@ -10,6 +10,7 @@ require_once('includes/classes/seasonProvider.php');
 require_once('includes/classes/video.php');
 require_once('includes/classes/season.php');
 require_once('includes/classes/categoryContainers.php');
+require_once("includes/classes/VideoProvider.php");
 
 if(!isset($_SESSION["userLoggedIn"])){
     header("Location: register.php");
