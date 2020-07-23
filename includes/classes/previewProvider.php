@@ -31,7 +31,7 @@ class PreviewProvider {
                     <div class='mainDetails'>
                         <h3> $name </h3>
                         <div class='buttons'>
-                            <button> <i class='fas fa-play'></i>  Play </button>
+                            <button onclick= 'watchVideo($videoId)'> <i class='fas fa-play'></i>  Play </button>
                             <button onclick='volumeToggle(this)'> <i class='fas fa-volume-mute'></i> </button>
                         </div>
                     </div>
@@ -44,6 +44,9 @@ class PreviewProvider {
         $id = $entity->getId();
         $thumbnail = $entity->getThumbnail();
         $name = $entity ->getName();
+        $preview = $entity->getPreview();
+
+        $videoId = VideoProvider::getEntityVideoForUser($this->con, $id, $this->username);
 
         return "<a href='entity.php?id=$id'>
                     <div class='previewContainer small'>

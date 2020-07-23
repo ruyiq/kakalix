@@ -288,3 +288,16 @@ button i{
     background-color: transparent;
     border: none;
 }
+
+.upNext{
+    height:100%;
+    justify-content:center;
+}
+
+.upNextContainer button{
+    padding: 0;
+}
+
+.upNextContainer h2{
+    color: #e5e5e5;
+}
