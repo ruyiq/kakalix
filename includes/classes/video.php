@@ -83,5 +83,17 @@ class Video {
 
         return $query->rowCount() != 0;
     }
+
+    public function hasSeen($username) {
+        $query = $this->con->prepare("SELECT * FROM videoProgress
+                                    WHERE videoId=:videoId AND username=:username
+                                    AND finished=1");
+
+        $query->bindValue(":videoId", $this->getId());
+        $query->bindValue(":username", $username);
+        $query->execute();
+
+        return $query->rowCount() != 0;
+    }
 }
 ?>
