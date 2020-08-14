@@ -24,7 +24,7 @@ class PreviewProvider {
         $inProgress = $video->isInProgress($this->username);
         $playButtonText = $inProgress ? "Continue Watching" : "Play";
         $seasonEpisode = $video->getSeasonAndEpisode();
-        $subheading = $video -> isMovie()? : "<h4> $seasonEpisode</h4>";
+        $subheading = $video -> isMovie()? "" : "<h4> $seasonEpisode</h4>";
 
         return"<div class='previewContainer'>
                     
