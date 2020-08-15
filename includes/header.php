@@ -54,5 +54,9 @@ $userLoggedIn = $_SESSION["userLoggedIn"];
                 <a href="profile.php">
                 <i class='fas fa-user-circle'></i>
                 </a>
+
+                <a href="logout.php">
+                <i class="fas fa-sign-out-alt"></i>
+                </a>
             </div>
         </div>
