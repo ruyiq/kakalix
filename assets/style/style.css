@@ -366,3 +366,18 @@ button i{
 .textboxContainer {
     padding: 100px 50px;
 }
+
+.textboxContainer{
+    padding: 120px 70px;
+}
+
+.searchInput{
+    height: 50px;
+    width: 600px;
+    border: 1px solid #dedede;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: transparent;
+}

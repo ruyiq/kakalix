@@ -91,7 +91,7 @@ class EntityProvider {
         $sql = "SELECT * FROM entities WHERE name LIKE CONCAT('%', :term, '%') LIMIT 30";
 
         $query = $con->prepare($sql);
-
+ 
         $query->bindValue(":term", $term);
         $query->execute();
 
@@ -102,6 +102,8 @@ class EntityProvider {
 
         return $result;
     }
+
+    
 
 }
 ?>
