@@ -11,6 +11,7 @@ require_once('includes/classes/video.php');
 require_once('includes/classes/season.php');
 require_once('includes/classes/categoryContainers.php');
 require_once("includes/classes/VideoProvider.php");
+require_once("includes/classes/user.php");
 
 if(!isset($_SESSION["userLoggedIn"])){
     header("Location: register.php");
