@@ -15,6 +15,15 @@ class PreviewProvider {
         }
         return $this->createPreviewVideo($entitiesArray[0]);
     }
+
+    public function createCategoryPreviewVideo($catrgoryId){
+        $entitiesArray = EntityProvider::getEntities($this->con, $categoryId, 1);
+
+        if(sizeof($entitiesArray) == 0){
+            ErrorMessage::show("Nothing so far");
+        }
+        return $this->createPreviewVideo($entitiesArray[0]);
+    }
    
     public function createMoviePreviewVideo(){
         $entitiesArray = EntityProvider::getMovieEntities($this->con, null, 1);
