@@ -40,8 +40,9 @@ $userLoggedIn = $_SESSION["userLoggedIn"];
 
             <ul class="navLinks">
                 <li> <a href="index.php"> Home </a> </li>
-                <li> <a href="shows.php"> TV </a> </li>
+                <li> <a href="shows.php"> TV Shows </a> </li>
                 <li> <a href="movies.php"> Movies </a> </li>
+                <li> <a href="movies.php"> Recently Added </a> </li>
             </ul>
 
             <div class="rightItems">
