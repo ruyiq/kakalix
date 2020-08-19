@@ -35,7 +35,7 @@ $userLoggedIn = $_SESSION["userLoggedIn"];
         <div class="topBar">
             <div class="logo Container">
                 <a href="index.php">
-                    <img src="assets/images/Kakalix_logo.png" alt="Logo">
+                    <img src="assets/images/logo.png" alt="Logo">
                 </a>
             </div>
 

@@ -17,7 +17,7 @@ class PreviewProvider {
     }
 
     public function createCategoryPreviewVideo($catrgoryId){
-        $entitiesArray = EntityProvider::getEntities($this->con, $categoryId, 1);
+        $entitiesArray = EntityProvider::getEntities($this->con,$catrgoryId, 1);
 
         if(sizeof($entitiesArray) == 0){
             ErrorMessage::show("Nothing so far");

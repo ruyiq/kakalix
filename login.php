@@ -38,7 +38,7 @@ require_once('includes/classes/Constants.php');
 
             <div class="column">
                 <div class ="header">
-                    <img src="assets/images/kakalix_logo.png"/>
+                    <img src="assets/images/logo.png" alt="Logo">
                     <h3> Sign in </h3>
                     <span> to continue to Kakalix </span>
                     
